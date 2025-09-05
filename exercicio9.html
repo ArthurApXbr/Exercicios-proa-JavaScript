@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 9 Javascript</title>
+</head>
+<body>
+    <script>
+        let deposito = parseFloat(prompt("Digite o valor do depósito mensal: "))
+        let taxa = parseFloat(prompt("Digite a taxa de juros mensal em %: ")) / 100
+
+        let montante = 0
+        for (let mes = 1; mes <= 12; mes++) {
+            montante = (montante + deposito) * (1 + taxa)
+        }
+        document.write(`O montante acumulado após 12 meses é: R$ ${montante.toFixed(2)}`)
+    </script>
+</body>
+</html>

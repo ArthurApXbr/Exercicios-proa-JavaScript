@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 4 Javascript</title>
+</head>
+<body>
+    <script>
+        let nota1 = parseInt(prompt("Digite a primeira nota: "))
+        let nota2 = parseInt(prompt("Digite a segunda nota: "))
+        let nota3 = parseInt(prompt("Digite a terceira nota: "))
+
+        if (nota1 <= 0 || nota1 >= 10 || nota2 <= 0 || nota2 >= 10 || nota3 <= 0 || nota3 >= 10) {
+            document.write("Erro. As notas só podem estar entre 0 e 10.")
+        } else {
+            
+            let media = (nota1 * 2) + (nota2 * 3) + (nota3 * 5) / 10
+            document.write("A média ponderada é: " + media)
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 5 Javascript</title>
+</head>
+<body>
+    <script>
+        let preço = parseFloat(prompt("Digite o preço do produto: "))
+        let quantidade = parseFloat(prompt("Digite a quantidade comprada: "))
+
+        if (quantidade <= 10) {
+            let semdesconto = preço * quantidade
+            document.write("O valor total a pagar é: " + semdesconto)
+        } else if (quantidade > 10) {
+            let comdesconto = (preço * quantidade) * (10 / 100)
+            document.write("O valor total a pagar é: " + comdesconto)
+        }
+    </script>
+</body>
+</html>
