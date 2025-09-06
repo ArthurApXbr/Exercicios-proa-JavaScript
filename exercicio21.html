@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 21 Javascript</title>
+</head>
+<body>
+    <script>
+        let Idade1 = parseInt(prompt("Digite a idade da primeira pessoa: "))
+        let Idade2 = parseInt(prompt("Digite a idade da segunda pessoa: "))
+        let Idade3 = parseInt(prompt("Digite a idade da terceira pessoa: "))
+        let menores = 0
+
+        if (Idade1 < 18) {
+            menores++
+        }
+        if (Idade2 < 18) {
+            menores++
+        }
+        if (Idade3 < 18) {
+            menores++
+        }
+        document.write("O número de pessoas menores de idade é: " + menores)
+    </script>
+</body>
+</html>

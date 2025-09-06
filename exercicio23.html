@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 23 Javascript</title>
+</head>
+<body>
+    <script>
+        let mes = prompt("Digite o nome de um mês:")
+        let dias
+
+        if (mes === "janeiro" || mes === "março" || mes === "maio" || mes === "julho" || mes === "agosto" || mes === "outubro" || mes === "dezembro") {
+            dias = 31
+        } 
+        else if (mes === "abril" || mes === "junho" || mes === "setembro" || mes === "novembro") {
+            dias = 30
+        } 
+        else if (mes === "fevereiro") {
+            dias = 28
+        } 
+        else {
+            dias = "mês invalido"
+    }
+
+    document.write("O mês de " + mes + " tem " + dias + " dias")
+    </script>
+</body>
+</html>
