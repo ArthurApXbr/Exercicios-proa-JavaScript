@@ -7,7 +7,16 @@
 </head>
 <body>
     <script>
-        
+        let codigo = parseInt(prompt("Digite o codigo do produto de 1 a 4: "))
+        let quantidade = parseInt(prompt("Digite a quantidade comprada: "))
+        let preco = {1: 5.00, 2: 10.00, 3: 15.00, 4: 20.00}
+        let total = 0
+        if (codigo >= 1 && codigo <= 4) {
+            total = preco[codigo] * quantidade
+            document.write("Total a pagar: R$ " + total.toFixed(2))
+        } else {
+            document.write("Codigo invalido. insira um código entre 1 e 4")
+        }
     </script>
 </body>
 </html>

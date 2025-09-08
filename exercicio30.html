@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 30 Javascript</title>
+</head>
+<body>
+    <script>
+        let quantidade = parseInt(prompt("Digite a quantidade de maças: "))
+        
+        if (quantidade < 11) {
+            let preco = quantidade * 0.50
+            document.write("O preço das maças é R$ " + preco.toFixed(2))
+        } else {
+            let preco = quantidade * 0.40
+            document.write("O preço das maças é R$ " + preco.toFixed(2))
+        }
+    </script>
+</body>
+</html>
