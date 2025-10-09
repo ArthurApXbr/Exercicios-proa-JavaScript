@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 9</title>
+</head>
+<body>
+    <script>
+        let NomeVelho = 0
+        let IdadeVelho = 0
+
+        for (let i = 0; i <= 10; i++) {
+            let Nome = prompt("Digite o nome da pessoa: ")
+            let idade = parseInt(prompt("Digite a Idade de " + Nome))
+        
+        if (idade > IdadeVelho){
+            Nome = NomeVelho
+            Idade = IdadeVelho
+        }
+    } 
+        document.write("A pessoa mais velha é: " + NomeVelho + " com " + IdadeVelho)
+    </script>
+</body>
+</html>
