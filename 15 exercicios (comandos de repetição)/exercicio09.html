@@ -11,15 +11,16 @@
         let IdadeVelho = 0
 
         for (let i = 0; i <= 10; i++) {
-            let Nome = prompt("Digite o nome da pessoa: ")
-            let idade = parseInt(prompt("Digite a Idade de " + Nome))
+            let nome = prompt("Digite o nome da pessoa: " + i)
+            let idade = parseInt(prompt("Digite a Idade de " + nome))
         
-        if (idade > IdadeVelho){
-            Nome = NomeVelho
-            Idade = IdadeVelho
+        if (idade > IdadeVelho) {
+            NomeVelho = nome
+            IdadeVelho = idade
         }
-    } 
-        document.write("A pessoa mais velha é: " + NomeVelho + " com " + IdadeVelho)
+    }
+    
+        document.write("A pessoa mais velha é: " + NomeVelho + " com " + IdadeVelho + " anos")
     </script>
 </body>
 </html>
