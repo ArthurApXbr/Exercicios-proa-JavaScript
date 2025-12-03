@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercicio 11</title>
+</head>
+<body>
+    <script>
+        let nome = prompt("Nome do vendedor:");
+        let salariofixo = parseFloat(prompt("Salario fixo:"));
+        let vendas = parseFloat(prompt("Total de vendas no mes:"));
+
+        let comissao = vendas * 1.15;
+        let salariofinal = salariofixo + comissao;
+
+        document.write("Nome: " + nome + "<br>");
+        document.write("Salario final: " + salariofinal);
+    </script>
+</body>
+</html>

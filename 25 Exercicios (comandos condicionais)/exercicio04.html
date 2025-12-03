@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercicio 04</title>
+</head>
+<body>
+    <script>
+        let A = parseFloat(prompt("Digite o valor A:"));
+        let B = parseFloat(prompt("Digite o valor B:"));
+        let C = parseFloat(prompt("Digite o valor C:"));
+
+        let maior = A;
+        if (B > maior) { maior = B; }
+        if (C > maior) { maior = C; }
+
+        let menor = A;
+        if (B < menor) { menor = B; }
+        if (C < menor) { menor = C; }
+
+        let meio = A + B + C - maior - menor;
+
+        document.write("Ordem decrescente: " + maior + ", " + meio + ", " + menor);
+</script>
+</body>
+</html>
